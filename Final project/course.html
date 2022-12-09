@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+
+<!----Header---->
+<section class="sub-header">
+    <nav>
+        <a href="index.html"><img src="images/logo.png" alt="logo"></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa fa-times" onclick="hideMenu()"></i>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="course.html">COURSE</a></li>
+                <li><a href="blog.html">BLOG</a></li>
+                <li><a href="contact.html">CONTACT</a></li>
+            </ul>
+        </div>
+        <i class="fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Our Courses</h1>
+</section>
+
+<!---Course-->
+
+<section class="course">
+    <h1>Courses that we offer</h1>
+    <p>We offer a large amount of courses ranging from engineering, science, arts, and math.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Engineering</h3>
+            <p>Our engineering courses are the best in the world. We offer a wide range of engineering courses, 
+                from mechanical engineering to electrical engineering, and computer engineering.</p>
+        </div>
+        <div class="course-col">
+            <h3>Science</h3>
+            <p>Our science courses are the best in the world. We offer a wide range of science courses, 
+                from biology to chemistry, physics and computer science.</p>
+        </div>
+        <div class="course-col">
+            <h3>Arts</h3>
+            <p>Our arts courses are the best in the world. We offer a wide range of arts courses, 
+                from painting to music, and literature.</p>
+        </div>
+        <div class="course-col">
+            <h3>Math</h3>
+            <p>Our math courses are the best in the world. We offer a wide range of math courses, 
+                from algebra to calculus, and statistics.</p>
+        </div>
+    </div>
+<br>
+
+    <h1>Pre and Post Graduation courses</h1>
+    <p>We offer a large amount of courses ranging in bachelors' and master degrees.</p>
+
+    <div class="row">
+        <div class="course-col">
+            <h3>Bachelors' Degrees</h3>
+            <p>We offer bachelor degrees in science, math, arts, and engineering</p>
+        </div>
+        <div class="course-col">
+            <h3>Masters Degrees</h3>
+            <p>We offer masters degrees in science and engineering.</p>
+        </div>
+    </div>
+</section> 
+
+<!----Facilities---->
+
+<section class="facilities">
+    <h1>Our Facilities</h1>
+    <p>Our facilities are the best in the world. We offer a wide range of facilities, from libraries to gyms, 
+        and sports facilities.</p>
+    <br>
+
+    <div class="row">
+        <div class="facilities-col">
+            <img src="images/library.png" alt="library">
+            <h3>Library</h3>
+            <p>Our library is the best in the world. We offer a wide range of books, from fiction to non-fiction, 
+                magazines and most importantly academic journals.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/cafeteria.png" alt="cafeteria">
+            <h3>Cafeteria</h3>
+            <p>Our cafeteria is the best in the world. We offer a wide range of food, from burgers to pizza, 
+                and most importantly healthy food. Fending machines are also spread across campuses.</p>
+        </div>
+        <div class="facilities-col">
+            <img src="images/basketball.png" alt="basketball court">
+            <h3>Basketball Courts</h3>
+            <p>Our courts are the best in the world. We offer NBA grade courts for all to train and practice on.</p>
+        </div>
+    </div>
+</section>
+
+<!---Footer--->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>We are the best university in the world. We offer a wide range of courses, from engineering to arts, and science.</p>
+    <div class="icons">
+        <i class="fa fa-facebook"></i>
+        <i class="fa fa-twitter"></i>
+        <i class="fa fa-instagram"></i>
+        <i class="fa fa-linkedin"></i>
+    </div>
+    <p>Copyrigth &copy; 2020. All rights reserved | Terms of Service | Privacy</p>
+    <u>bestuniversity@gmail.com</u>
+    
+
+</section>
+
+<!----JavaScript to toggle Menu on mobile---->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
